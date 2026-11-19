@@ -10,6 +10,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELD = re.compile(r"^(name|description):[ \t]*(.*)$")
+MARKDOWN_ESCAPES = str.maketrans({character: "\\" + character for character in "\\|*_~`[]"})
 
 
 def read_fields(path):
@@ -64,7 +65,7 @@ def read_scalar(first, continuation):
 
 def table_text(value):
     # Keep descriptions and member names as literal text inside Markdown cells.
-    return re.sub(r"([\\|*_~[]])", r"\\\1", html.escape(value, quote=False).replace("\n", " "))
+    return html.escape(value, quote=False).replace("\n", " ").translate(MARKDOWN_ESCAPES)
 
 
 def main():
