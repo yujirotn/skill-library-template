@@ -1,0 +1,24 @@
+# 会社のスキル・ライブラリ
+
+自分の AI の作業フォルダ（ハーネス）を育てるために、役立ったスキルや会社のデザインの決まりを持ち寄る棚です。
+
+- [DESIGN.md](DESIGN.md) に会社のデザインの決まり、[design/](design/) に見本があります。
+- [members/](members/) に各メンバーの紹介とおすすめ、[CATALOG.md](CATALOG.md) にスキルの一覧があります。
+
+## AI に貼る文章
+
+使いたい作業フォルダを Codex または Claude Code で開きます。下の文の `【 】` を書き換えて貼ってください。非公開のライブラリは、招待を受けた GitHub アカウントでアクセスします。
+
+| やりたいこと | Codex に貼る | Claude Code に貼る |
+| --- | --- | --- |
+| 取り込む | 【GitHub の URL】の AGENTS.md を読み、【持ち主】の【スキル名】を今の作業フォルダの Codex に取り込んで。 | 【GitHub の URL】の CLAUDE.md を読み、【持ち主】の【スキル名】を今の作業フォルダの Claude Code に取り込んで。 |
+| 載せる | 【GitHub の URL】の AGENTS.md を読み、私の Codex の【スキル名】を【自分の呼び名】のフォルダに載せるプルリクエストを作って。 | 【GitHub の URL】の CLAUDE.md を読み、私の Claude Code の【スキル名】を【自分の呼び名】のフォルダに載せるプルリクエストを作って。 |
+| 一覧を見る | 【GitHub の URL】の CATALOG.md を読んで、スキル名、持ち主、何に使うかを教えて。 | 【GitHub の URL】の CATALOG.md を読んで、スキル名、持ち主、何に使うかを教えて。 |
+
+## 会社で始める
+
+1. GitHub の **Use this template** から **Create a new repository** を選び、会社の組織に **Private** で作ります。既定のブランチ名は `main` にします。
+2. メンバーを招待します。載せる人には変更を提案できる権限を付け、ライブラリの URL を共有します。
+3. 各自が [メンバーのひな形](members/_ひな形/) を使って自分の呼び名のフォルダを作ります。管理者は [DESIGN.md](DESIGN.md) に会社の決まりを書きます。
+
+会社の文書や仕事の手順もまとめて扱うなら [会社の書庫のひな形](https://github.com/yujirotn/company-ai-repo-template) が使えます。まずはスキルとデザインの見本を持ち寄るところから始めるなら、このライブラリだけで始められます。
